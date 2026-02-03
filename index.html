@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Meli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;600&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="screen1" class="container">
+        <div class="text-box">
+            <h1>Meli le tengo una sorpresa</h1>
+            <p>Para descubrirla da click sobre el corazón</p>
+            <button class="heart-button" onclick="showFlowers()"></button>
+        </div>
+    </div>
+
+    <div id="screen2" class="container">
+        <div class="text-box">
+            <h1>Princesa, le complace ser mi San Valentín?</h1>
+            <div style="margin-top: 30px;">
+                <button class="button" onclick="handleYes()">Si</button>
+                <button class="button" id="noButton" onclick="handleNo()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="screen3" class="container">
+        <div class="text-box" id="noBox">
+            <h1>¿Cómo usted va a decir eso preciosa?</h1>
+            <div style="margin-top: 30px;">
+                <button class="button" onclick="handleYes()">Es si o si cariño no hay opción</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="screen4" class="container">
+        <div class="text-box">
+            <h1>Sabía que dirías que si</h1>
+            <p class="special-text">Después que Dios hiciera su magia y los caminos se cruzaran, quedó claro algo: quiero vivir este 14 de febrero con usted. Mi corazón, la única fuente confiable en estos temas lo tiene claro desde hace tiempo. Quiero un San Valentín a su lado, lleno de amor, risas sinceras y momentos que se queden grabados en nuestros corazones.</p>
+            <button class="button" onclick="showFinal()" style="margin-top: 30px;">Continuar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
